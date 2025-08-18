@@ -1,8 +1,8 @@
 :root {
-  --primary: #1d4ed8;
-  --gray-light: #f3f4f6;
+  --primary: #0d47a1;
+  --primary-light: #e3f2fd;
   --gray: #6b7280;
-  --dark: #111827;
+  --dark: #1f2937;
 }
 
 * {
@@ -31,7 +31,7 @@ body {
   position: sticky;
   top: 0;
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e5e7eb;
   z-index: 1000;
 }
 
@@ -51,6 +51,11 @@ body {
   text-decoration: none;
   color: var(--dark);
   font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav a:hover {
+  color: var(--primary);
 }
 
 .call-button {
@@ -61,6 +66,11 @@ body {
   text-decoration: none;
   font-weight: 600;
   margin-left: 1rem;
+  transition: background 0.2s ease-in-out;
+}
+
+.call-button:hover {
+  background: #0b3c91;
 }
 
 .nav-toggle {
@@ -72,11 +82,28 @@ body {
 }
 
 .hero {
-  background: url("https://images.unsplash.com/photo-1580281657528-577f9cdd1994?auto=format&fit=crop&w=1350&q=80")
+  background: url("https://images.unsplash.com/photo-1582719478250-df5a1cd64e5d?auto=format&fit=crop&w=1350&q=80")
     center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 6rem 1rem;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .hero h1 {
@@ -111,7 +138,7 @@ body {
 .hours {
   padding: 3rem 1rem;
   text-align: center;
-  background: var(--gray-light);
+  background: var(--primary-light);
 }
 
 .hours-card {
@@ -120,6 +147,7 @@ body {
   padding: 1.5rem 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid var(--primary);
 }
 
 .hours-card ul {
@@ -133,13 +161,29 @@ body {
 
 .status {
   font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.status span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.status span::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: currentColor;
+  margin-right: 0.25rem;
 }
 
 .status .open {
-  color: green;
+  color: #16a34a;
 }
+
 .status .closed {
-  color: red;
+  color: #dc2626;
 }
 
 .services {
@@ -156,8 +200,9 @@ body {
 
 .service-item {
   padding: 1.5rem;
-  background: var(--gray-light);
+  background: #fff;
   border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .service-item .icon {
@@ -186,7 +231,7 @@ body {
 .contact {
   padding: 3rem 1rem;
   text-align: center;
-  background: var(--gray-light);
+  background: var(--primary-light);
 }
 
 .contact-link {
@@ -248,5 +293,15 @@ body {
   .call-button {
     order: 2;
     margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    text-align: left;
+  }
+  .about-content img {
+    margin-left: 2rem;
   }
 }
