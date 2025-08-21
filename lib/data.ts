@@ -32,36 +32,36 @@ export const siteData = {
       name: "John Doe",
       title: "Master Barber",
       description:
-        "Specializing in fades and classic cuts with 10+ years experience.",
-      image: "https://via.placeholder.com/200",
+        "Specializing in precision fades and classic cuts with over 10 years of experience. John's attention to detail and friendly personality make every visit memorable.",
+      image: "https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
     {
-      name: "Jane Doe",
-      title: "Barber",
+      name: "Mike Rodriguez",
+      title: "Senior Barber",
       description:
-        "Friendly and professional, great with all styles.",
-      image: "https://via.placeholder.com/200",
+        "Expert in modern styling and beard grooming. Mike brings creativity and skill to every cut, ensuring you leave looking and feeling your absolute best.",
+      image: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
   ],
   reviews: [
     {
       text:
-        "Best fade I’ve had in Ottawa. The barbers really take their time and care.",
+        "Absolutely the best fade I've ever had in Ottawa! The barbers really take their time and you can tell they genuinely care about their craft. Will definitely be coming back.",
       author: "Alex P.",
     },
     {
       text:
-        "Friendly staff, clean shop, and fair prices. I always leave looking sharp.",
+        "Outstanding service every single time. The staff is incredibly friendly, the shop is always spotless, and the prices are more than fair. I always leave looking sharp and feeling confident.",
       author: "Sarah L.",
     },
     {
       text:
-        "Walked in on a Saturday, barely waited. Great haircut, I’ll be back for sure.",
+        "Walked in on a busy Saturday and barely had to wait. Got an amazing haircut that exceeded my expectations. The attention to detail is incredible - I'll definitely be back!",
       author: "Mark D.",
     },
     {
       text:
-        "These guys know how to do a proper beard trim. Highly recommend.",
+        "Finally found barbers who know how to do a proper beard trim! The precision and technique are top-notch. Highly recommend to anyone looking for quality grooming.",
       author: "Kevin R.",
     },
   ],
